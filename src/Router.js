@@ -7,13 +7,13 @@ function Router() {
     return (
         <BrowserRouter>
             <div className="App-menu">
-                <Link to="/">Home</Link>
-                <Link to="/Second">Second</Link>
+                <Link to="/context-sharing/">Home</Link>
+                <Link to="/context-sharing/Second">Second</Link>
             </div>
 
             <Routes>
-            <Route path='/' element={<Home/>} />
-            <Route path='/Second' element={<Second/>} />
+                <Route path="/context-sharing/" element={<Home/>} />
+                <Route path="/context-sharing/Second" element={<Second/>} />
             </Routes>
         </BrowserRouter>
     );
