@@ -5,13 +5,13 @@ import { useContext } from 'react';
 
 function Home() {
     const context = useContext(DataContext);
-    const setGreeting = (e) => {
+    const handleChange = (e) => {
         context.setGreeting(e.target.value);
     }
 
     return (
         <div>
-            <input onChange={setGreeting} value={context.text} type="text" /><br/>{context.text}<br/>
+            <input onChange={handleChange} value={context.text} type="text" /><br/>{context.text}<br/>
             <img src={logo} className="App-logo" alt="logo" />
             <p>
             Edit <code>src/App.js</code> and save to reload.
